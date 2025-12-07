@@ -1,0 +1,21 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 3.4
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - "bin/*"
+    - "config/**/*"
+    - "db/cable_schema.rb"
+    - "db/cache_schema.rb"
+    - "db/queue_schema.rb"
+    - "db/schema.rb"
+    - "log/*"
+    - "node_modules/*"
+    - "public/**/*"
+    - "script/*"
+    - "storage/*"
+    - "tmp/**/*"
+    - "vendor/*"
