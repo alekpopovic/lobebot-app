@@ -8,7 +8,6 @@ export default defineConfig({
         "**/.github/**",
         "**/.vscode/**",
         "**/k8s/**",
-        "**/node_modules/**",
       ],
     },
   },
@@ -17,7 +16,7 @@ export default defineConfig({
       envVars: { RAILS_ENV: "development" },
       envOptions: { defineOn: "import.meta.env" },
       fullReload: {
-        additionalPaths: ["config/routes.rb", "app/views/**/*"],
+        additionalPaths: ["config/routes.rb", "app/views/**/*", "app/views/**/**/*"],
         delay: 300,
       },
     }),
