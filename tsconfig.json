@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["ES2023", "dom"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*", "app/packs/*"]
+    },
+    "sourceMap": true,
+    "target": "ES2023",
+    "noEmit": true
+  },
+  "exclude": ["**/*.spec.ts", "node_modules", "vendor", "public", "api"],
+  "compileOnSave": false
+}
